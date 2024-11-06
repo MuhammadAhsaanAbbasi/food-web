@@ -1,6 +1,6 @@
 
- import React, { Dispatch, SetStateAction } from 'react';
-import { menu_list } from '../../../public/assets'; 
+import React, { Dispatch, SetStateAction } from 'react';
+import { menu_list } from "../assets";
 import Image from 'next/image';
 
 interface ExploreMenuProps {
@@ -27,7 +27,7 @@ const ExploreMenu: React.FC<ExploreMenuProps> = ({ category, setCategory }) => {
                 className={category === item.menu_name ? "active" : ""}
                 src={item.menu_image}
                 alt={item.menu_name}
-                width={100} 
+                width={100}
                 height={100}
               />
               <p>{item.menu_name}</p>

@@ -1,5 +1,5 @@
 import React, { createContext, ReactNode, useEffect, useState } from "react";
-import { food_list } from "../../public/assets";
+import { food_list } from "../assets";
 
 
 // Define the type for the context value

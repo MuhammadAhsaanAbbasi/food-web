@@ -3,7 +3,7 @@
 import React, { useContext } from "react";
 import { StoreContext } from "@/context/StoreContext"; // Ensure this context includes the food_list
 import FoodItem from "./FoodItem";
-import { food_list } from "../../../public/assets"; // Import the food_list
+import { food_list } from "../assets"; // Import the food_list
 
 // Define the expected context type
 interface StoreContextType {
@@ -33,7 +33,7 @@ const FoodDisplay: React.FC<{ category: string }> = ({ category }) => {
               name={item.name}
               description={item.description}
               price={item.price}
-              image={item.image} // This should point to the imported image
+              image={item.image.src} // This should point to the imported image
             />
           ))
         ) : (

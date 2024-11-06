@@ -1,4 +1,4 @@
-import Header from '@/app/commponents/Header'
+import Header from '@/components/Header'
 import React from 'react'
 
 const home = () => {
